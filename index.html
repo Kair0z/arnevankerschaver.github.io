@@ -32,112 +32,168 @@
   <body>
 
     <div class="popup" id="popup-1">
-      <div class="overlay"></div>
-      <div class="content">
+      <div class="overlay" onclick="togglePopup(document.getElementById('popup-1'))"></div>
+      <div class="content" style="background-image: url('assets/images/Projects/LiberoEngine3D.png');">
         <div class="close-btn" onclick="togglePopup(document.getElementById('popup-1'))">&times;</div>
+        <div class="content-text">
         <h1>The Libero Engine [3D]</h1>
         <p> 
-          My most recent project. Coded in C++ - Visual Studio 2020. This is a 3D-rendition of my 
+          <br>My most recent project. Coded in C++ - Visual Studio 2020. This is a 3D-rendition of my 
           previously made 2D-Engine. <br>
 
           It provides me with the perfect sandbox to learn about various elements of Game-Engine Development.
           The main challenge would be that it's programmed in the ECS(Entity-Component-System) system-flow, 
           in which all data is Components and Entities in the world are merely ID's.
-
+          <br>
+          <br>
           The Engine uses: <br>
           - DirectX11 for rendering <br>
           - PhysX for Physics <br>
           - ImGui for Editor & User-Interface.<br>
 
         </p>
+      </div>
        </div>
       
     </div>
 
     <div class="popup" id="popup-2">
-      <div class="overlay"></div>
-      <div class="content">
+      <div class="overlay" onclick="togglePopup(document.getElementById('popup-2'))"></div>
+      <div class="content" style="background-image: url('assets/images/Projects/BubbleBobble.png');">
         <div class="close-btn" onclick="togglePopup(document.getElementById('popup-2'))">&times;</div>
+        <div class="content-text">
         <h1>The Libero Engine [2D]</h1>
-        <p>TEXT</p>
+        <p>
+          <br>This project is my first attempt at a self-made Game-Engine. It is coded in C++ - Visual Studio 2020, 
+          and only supports 2D rendering.<br><br>
+  
+          In this engine, I remade a beloved arcade-classic 'BubbleBobble' to test out the functionality of the engine.
+          The engine is built using a lot of Game-programming Design patterns which I learned a lot about in this book: [Booklink].
+          Without a doubt the engine has a lot to improve upon. 
+          But while working this project I learned valuable skills & techniques 
+          that made me understand and appreciate how a Game-Engine works and is built even more.</p>
+      </div>
        </div>
       
     </div>
 
     <div class="popup" id="popup-3">
-      <div class="overlay"></div>
-      <div class="content">
+      <div class="overlay" onclick="togglePopup(document.getElementById('popup-3'))"></div>
+      <div class="content" style="background-image: url('assets/images/Projects/StikBoldt.png');">
         <div class="close-btn" onclick="togglePopup(document.getElementById('popup-3'))">&times;</div>
+       
+        <div class="content-text">
         <h1>Stikboldt!</h1>
         <p>A game I created in 'The Overlord Engine', a small Game-Engine that at first, 
           implemented a basic DX11 framework, but had close to no rendering capabilities.
-          So I added various missing elements such as: <br>
+          So I added various missing elements such as: <br> <br>
           - Basic Diffuse materials <br>
-          - GPU Skinning (using the Vertex Shader)
-          - 2D-rendering & Text-Rendering
-          - Post Processing [Vignette, Grayscale] 
-          - Particle Effects
+          - GPU Skinning (using the Vertex Shader) <br>
+          - 2D-UI-rendering & Text-Rendering <br>
+          - Post Processing [Vignette, Grayscale] <br>
+          - Particle Effects <br>
+          <br>
+          All of which would call onto the Graphics API of DirectX
+          via Visual Studio C++ code, to render them on screen;
         </p>
-       </div>
+      </div>
+      </div>
       
     </div>
 
     <div class="popup" id="popup-4">
-      <div class="overlay"></div>
-      <div class="content">
+      <div class="overlay" onclick="togglePopup(document.getElementById('popup-4'))"></div>
+      <div class="content" style="background-image: url('assets/images/Projects/Rasterizer_2.png');">
         <div class="close-btn" onclick="togglePopup(document.getElementById('popup-4'))">&times;</div>
+        <div class="content-text">
         <h1>My Custom Rasterizer</h1>
-        <p></p>
+        <p>
+          This rasterizer became one of the first demo-projects to help me get familiar
+          with the DirectX11 API.<br><br>
+
+          However, the project is not a hardware-based renderer calling onto DirectX, but a 
+          software-based renderer that makes the CPU shade every pixel after one another.
+          With a system that mirrors the DX-renderpipeline with <br><br>
+          1) an Input Assembler).<br>
+          2) a Vertex Shader) <br>
+          3) a Rasterizer) <br>
+          4) a Pixelshader <br>
+
+          <br>
+          After I was somewhat satisfied with the work I did,
+          I also added some camera-functionality, some background-rendering & interactive-UI-rendering.
+        </p>
+      </div>
        </div>
       
     </div>
 
     <div class="popup" id="popup-9">
-      <div class="overlay"></div>
-      <div class="content">
+      <div class="overlay" onclick="togglePopup(document.getElementById('popup-9'))"></div>
+      <div class="content" style="background-image: url('assets/images/Projects/Raytracer.png');">
         <div class="close-btn" onclick="togglePopup(document.getElementById('popup-9'))">&times;</div>
+        <div class="content-text">
         <h1>My Custom Raytracer</h1>
-        <p>TEXT</p>
+        <p>
+
+        </p>
+      </div>
        </div>
-      
     </div>
 
     <div class="popup" id="popup-5">
-      <div class="overlay"></div>
-      <div class="content">
+      <div class="overlay" onclick="togglePopup(document.getElementById('popup-5'))"></div>
+      <div class="content" style="background-image: url('assets/images/Projects/Polybusted.png');">
         <div class="close-btn" onclick="togglePopup(document.getElementById('popup-5'))">&times;</div>
-        <h1>5</h1>
-        <p>TEXT</p>
+        <div class="content-text">
+        <h1>PolyBusted!</h1>
+        <p>
+          
+        </p>
+      </div>
        </div>
-      
     </div>
 
     <div class="popup" id="popup-6">
-      <div class="overlay"></div>
-      <div class="content">
+      <div class="overlay" onclick="togglePopup(document.getElementById('popup-6'))"></div>
+      <div class="content" style="background-image: url('assets/images/Projects/TowerDefense.png');">
         <div class="close-btn" onclick="togglePopup(document.getElementById('popup-6'))">&times;</div>
+        <div class="content-text">
         <h1>6</h1>
         <p>TEXT</p>
+        </div>
        </div>
       
     </div>
 
     <div class="popup" id="popup-7">
-      <div class="overlay"></div>
-      <div class="content">
+      <div class="overlay" onclick="togglePopup(document.getElementById('popup-7'))"></div>
+      <div class="content" style="background-image: url('assets/images/Projects/Robot.png');">
         <div class="close-btn" onclick="togglePopup(document.getElementById('popup-7'))">&times;</div>
+        <div class="content-text">
         <h1>7</h1>
-        <p>TEXT</p>
+        <p>
+          A lowpoly robot on which I learned the complete AAA-Game-Asset production pipeline.
+          From unwrapping, to rigging, to baking and adding PBR-materials. This Mad-Max themed mech
+          taught me the power of baking normal maps, making the use of high-poly-looking quality assets possible in games.
+        </p>
+        </div>
        </div>
       
     </div>
 
     <div class="popup" id="popup-8">
-      <div class="overlay"></div>
-      <div class="content">
+      <div class="overlay" onclick="togglePopup(document.getElementById('popup-8'))"></div>
+      <div class="content" style="background-image: url('assets/images/Projects/Lerna.png');">
         <div class="close-btn" onclick="togglePopup(document.getElementById('popup-8'))">&times;</div>
+        <div class="content-text">
         <h1>8</h1>
-        <p>TEXT</p>
+        <p>
+            From designing and blocking out a level, to creating modular assets for optimizing re-usability,<br>
+            this project did put my 3D-modelling and unwrapping capabilities to the test, as well as increasing my knowledge on<br>
+            PBR-materials and how they were used in AAA-quality-games.<br>
+        </p>
+        </div>
        </div>
       
     </div>
@@ -213,10 +269,8 @@
                   upscaling it towards a 3D-Game/Rendering Engine in C++<br> 
                   I came face to face with a lot of aspects of how a general Game-engine works. <br><br>
 
-                  To name a few: <br>
-                  - ECS-Updateloop <br>
-                  - Transform-parenting (deferred) <br>
-                  - Nvidia PhysX  
+                  Nowadays I spend my time working on my 3D-engine and implementing features that I can find in common 
+                  3th-party engines like Godot, Unreal Engine 4 and The Unity Engine.
                 </p>
               </div>
             </div>
@@ -225,9 +279,10 @@
                 <div class="second-service-icon service-icon"></div>
                 <h4>Graphics Programming (C++)</h4>
                 <p>
-                  Concerning Game Development, Graphics programming could very well take the cake 
-                  of grabbing the most of my attention & interest.
-                  Starting of with my own software-based Raytracer & Rasterizer projects.
+                  Concerning Game Development, Graphics programming is the field that grabs 
+                  the attention of my love for math and physics-simulation.
+                  Starting of with my own software-based Raytracer & Rasterizer projects,
+                  and learning how shading and 3D-projection makes images appear on screen, 
                   I soon discovered the power of Microsoft DirectX and started to implement 
                   3D-rendering in both my own Game Engine, as well as small demo-projects.
                 </p>
@@ -237,11 +292,9 @@
             <div class="col-md-6">
               <div class="service-item">
                 <div class="fourth-service-icon service-icon"></div>
-                <h4>Tool development</h4>
+                <h4></h4>
                 <p>
-                  Vivamus et dui a massa venenatis fringilla. Proin lacus massa,
-                  eleifend sed fermentum in, dignissim vel metus. Nunc accumsan
-                  leo nec felis porttitor.
+                  
                 </p>
               </div>
             </div>
@@ -515,7 +568,7 @@
 
                       <h4>The Libero Engine [2D]<br>
                         - BubbleBobble</h4>
-                      <span>Re-distribution not allowed</span>
+                      <span>A small 2D-arcade-game ('BubbleBobble') made in C++ Visual Studio 2020.</span>
                     </figcaption>
                   </figure>
                 </div>
@@ -546,7 +599,10 @@
                     <figcaption>
                       <span class="fa fa-search" onclick="togglePopup(document.getElementById('popup-4'))"></span>
                       <h4>Custom Rasterizer</h4>
-                      <span>customize anything</span>
+                      <span>
+                        My first Graphics-Programming-related demo-application rendering an object
+                        by mimicking the DirectX-render-pipeline. This renderer uses the CPU to render every pixel.
+                      </span>
                     </figcaption>
                   </figure>
                 </div>
@@ -560,7 +616,10 @@
                     <figcaption>
                       <span class="fa fa-search" onclick="togglePopup(document.getElementById('popup-9'))"></span>
                       <h4>Custom Raytracer</h4>
-                      <span>customize anything</span>
+                      <span>
+                        A software-based raytracer written in C++ that shades every pixel 
+                        using calculations in the PBR-workflow and in optimizing the raytracing process.
+                      </span>
                     </figcaption>
                   </figure>
                 </div>
@@ -575,7 +634,10 @@
                     <figcaption>
                       <span class="fa fa-search" onclick="togglePopup(document.getElementById('popup-5'))"></span>
                       <h4>PolyBusted!</h4>
-                      <span>Ut sollicitudin risus</span>
+                      <span>
+                        A compact, high-impact 3D Unity game developped by a team of 
+                        2 wonderful artists and myself.
+                      </span>
                     </figcaption>
                   </figure>
                 </div>
@@ -589,7 +651,9 @@
                     <figcaption>
                       <span class="fa fa-search" onclick="togglePopup(document.getElementById('popup-6'))"></span>
                       <h4>Mage-Towers</h4>
-                      <span>Donec eget massa ante</span>
+                      <span>
+                        My first game made in Unreal Engine 4, mostly programmed in its visual scripting language 'Blueprints'.
+                      </span>
                     </figcaption>
                   </figure>
                 </div>
@@ -602,8 +666,9 @@
                     />
                     <figcaption>
                       <span class="fa fa-search" onclick="togglePopup(document.getElementById('popup-7'))"></span>
-                      <h4>'Mad-Max'-Highpoly Robot</h4>
-                      <span>Donec eget massa ante</span>
+                      <h4>'Mad-Max'-themed Lowpoly Robot</h4>
+                      <span>From a lowpoly robot to a seemingly high-poly 3D model using the 
+                        AAA-Game-asset-production pipeline.</span>
                     </figcaption>
                   </figure>
                 </div>
@@ -617,7 +682,9 @@
                     <figcaption>
                       <span class="fa fa-search" onclick="togglePopup(document.getElementById('popup-8'))"></span>
                       <h4>'Lerna' Level Design</h4>
-                      <span> Description...</span>
+                      <span> 
+                        A 3D, midpoly level design made in Unreal Engine 4.
+                      </span>
                     </figcaption>
                   </figure>
                 </div>
@@ -630,8 +697,6 @@
 
 
       
-
-
       <section class="section about-me" data-section="section1">
         <div class="container">
           <div class="section-heading">
@@ -654,6 +719,13 @@
               </div>
               <div class="col-md-6">
                 <div class="right-text">
+                  <h4>Personality</h4>
+                  <p style="font-weight: bold;">
+                    I'm a rather agreeable person and have always been very enthousiastic about even the smallest 
+                    events going on in life. I don't shy away from a head-on challenge, and dare to change my habits 
+                    in trying to learn more about my fields of knowledge.
+                  </p>
+
                   <h4>Additional Interests</h4>
                   <p style="font-weight: bold;">
                     - Music And Music Theory<br>
@@ -662,7 +734,10 @@
 
                   <p style="font-weight: bold;">
                     On the off-time, I spend my time <br>
-                    teaching Classical Guitar, and as a scouting group leader.
+                    teaching Classical Guitar to students, 
+                    and it does me good to wander around in forests, meadows and towns 
+                    as a scouting leader in my hometown, where I also fulfilled roles 
+                    in administrative tasks and organising local events.
                   </p>
                 </div>
               </div>
@@ -682,7 +757,8 @@
             <h2>Let's get in touch!</h2>
             <div class="line-dec"></div>
             <span
-              >I am currently looking for an internship and would love to hear from you! <br> </span
+              >I am currently looking for an internship and would love to hear from you!
+               <br> </span
             >
           </div>
           <div class="row">
