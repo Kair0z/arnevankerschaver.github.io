@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+  
   <head>
     <meta charset="utf-8" />
     <meta
@@ -25,9 +26,122 @@
     <link rel="stylesheet" href="assets/css/templatemo-style.css" />
     <link rel="stylesheet" href="assets/css/owl.css" />
     <link rel="stylesheet" href="assets/css/lightbox.css" />
+    <link rel="stylesheet" href="assets/css/simplepopup.css"/>
   </head>
 
   <body>
+
+    <div class="popup" id="popup-1">
+      <div class="overlay"></div>
+      <div class="content">
+        <div class="close-btn" onclick="togglePopup(document.getElementById('popup-1'))">&times;</div>
+        <h1>The Libero Engine [3D]</h1>
+        <p> 
+          My most recent project. Coded in C++ - Visual Studio 2020. This is a 3D-rendition of my 
+          previously made 2D-Engine. <br>
+
+          It provides me with the perfect sandbox to learn about various elements of Game-Engine Development.
+          The main challenge would be that it's programmed in the ECS(Entity-Component-System) system-flow, 
+          in which all data is Components and Entities in the world are merely ID's.
+
+          The Engine uses: <br>
+          - DirectX11 for rendering <br>
+          - PhysX for Physics <br>
+          - ImGui for Editor & User-Interface.<br>
+
+        </p>
+       </div>
+      
+    </div>
+
+    <div class="popup" id="popup-2">
+      <div class="overlay"></div>
+      <div class="content">
+        <div class="close-btn" onclick="togglePopup(document.getElementById('popup-2'))">&times;</div>
+        <h1>The Libero Engine [2D]</h1>
+        <p>TEXT</p>
+       </div>
+      
+    </div>
+
+    <div class="popup" id="popup-3">
+      <div class="overlay"></div>
+      <div class="content">
+        <div class="close-btn" onclick="togglePopup(document.getElementById('popup-3'))">&times;</div>
+        <h1>Stikboldt!</h1>
+        <p>A game I created in 'The Overlord Engine', a small Game-Engine that at first, 
+          implemented a basic DX11 framework, but had close to no rendering capabilities.
+          So I added various missing elements such as: <br>
+          - Basic Diffuse materials <br>
+          - GPU Skinning (using the Vertex Shader)
+          - 2D-rendering & Text-Rendering
+          - Post Processing [Vignette, Grayscale] 
+          - Particle Effects
+        </p>
+       </div>
+      
+    </div>
+
+    <div class="popup" id="popup-4">
+      <div class="overlay"></div>
+      <div class="content">
+        <div class="close-btn" onclick="togglePopup(document.getElementById('popup-4'))">&times;</div>
+        <h1>My Custom Rasterizer</h1>
+        <p></p>
+       </div>
+      
+    </div>
+
+    <div class="popup" id="popup-9">
+      <div class="overlay"></div>
+      <div class="content">
+        <div class="close-btn" onclick="togglePopup(document.getElementById('popup-9'))">&times;</div>
+        <h1>My Custom Raytracer</h1>
+        <p>TEXT</p>
+       </div>
+      
+    </div>
+
+    <div class="popup" id="popup-5">
+      <div class="overlay"></div>
+      <div class="content">
+        <div class="close-btn" onclick="togglePopup(document.getElementById('popup-5'))">&times;</div>
+        <h1>5</h1>
+        <p>TEXT</p>
+       </div>
+      
+    </div>
+
+    <div class="popup" id="popup-6">
+      <div class="overlay"></div>
+      <div class="content">
+        <div class="close-btn" onclick="togglePopup(document.getElementById('popup-6'))">&times;</div>
+        <h1>6</h1>
+        <p>TEXT</p>
+       </div>
+      
+    </div>
+
+    <div class="popup" id="popup-7">
+      <div class="overlay"></div>
+      <div class="content">
+        <div class="close-btn" onclick="togglePopup(document.getElementById('popup-7'))">&times;</div>
+        <h1>7</h1>
+        <p>TEXT</p>
+       </div>
+      
+    </div>
+
+    <div class="popup" id="popup-8">
+      <div class="overlay"></div>
+      <div class="content">
+        <div class="close-btn" onclick="togglePopup(document.getElementById('popup-8'))">&times;</div>
+        <h1>8</h1>
+        <p>TEXT</p>
+       </div>
+      
+    </div>
+
 
       <div id="page-wraper">
       
@@ -61,10 +175,8 @@
                   ></a>
                 </li>
                 <li>
-                  <a href="#"><i class="fa fa-twitter"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fa fa-linkedin"></i></a>
+                  <a href="https://www.linkedin.com/in/arne-van-kerschaver-800a351b1/">
+                  <i class="fa fa-linkedin"></i></a>
                 </li>
                 <li>
                   <a href="#"><i class="fa fa-dribbble"></i></a>
@@ -152,9 +264,9 @@
         <div class="container">
           <div class="skill-ratings">
             <div class="section-heading" style="padding : 40px 45px">
-              <h2>My Skills & Stats</h2>
+              <h2>Skills</h2>
               <div class="line-dec"></div>
-              <span>The skills I acquired...</span>
+              <span>What I've learned so far...</span>
             </div>
             <div class="row">
 
@@ -163,7 +275,7 @@
                   <h4>C++</h4>
                   <div class="progress-bar">
                     <div class="progress"
-                      style="height: 24px; width:80%">
+                      style="height: 24px; width:50%">
                     </div>
                   </div>
                 </div>
@@ -174,7 +286,7 @@
                   <h4>C#</h4>
                   <div class="progress-bar">
                     <div class="progress"
-                      style="height: 24px; width:70%">
+                      style="height: 24px; width:45%">
                     </div>
                   </div>
                 </div>
@@ -185,7 +297,7 @@
                   <h4>UE4 (C++)</h4>
                   <div class="progress-bar">
                     <div class="progress"
-                      style="height: 24px; width:75%">
+                      style="height: 24px; width:40%">
                     </div>
                   </div>
                 </div>
@@ -196,7 +308,7 @@
                   <h4>DirectX 11</h4>
                   <div class="progress-bar">
                     <div class="progress"
-                      style="height: 24px; width:60%">
+                      style="height: 24px; width:30%">
                     </div>
                   </div>
                 </div>
@@ -207,7 +319,7 @@
                   <h4>HTML/CSS</h4>
                   <div class="progress-bar">
                     <div class="progress"
-                      style="height: 24px; width:40%">
+                      style="height: 24px; width:30%">
                     </div>
                   </div>
                 </div>
@@ -218,7 +330,7 @@
                   <h4>JavaScript</h4>
                   <div class="progress-bar">
                     <div class="progress"
-                      style="height: 24px; width:30%">
+                      style="height: 24px; width:20%">
                     </div>
                   </div>
                 </div>
@@ -229,7 +341,7 @@
                   <h4>Perforce</h4>
                   <div class="progress-bar">
                     <div class="progress"
-                      style="height: 24px; width:40%">
+                      style="height: 24px; width:30%">
                     </div>
                   </div>
                 </div>
@@ -240,7 +352,7 @@
                   <h4>Python</h4>
                   <div class="progress-bar">
                     <div class="progress"
-                      style="height: 24px; width:30%">
+                      style="height: 24px; width:20%">
                     </div>
                   </div>
                 </div>
@@ -278,7 +390,7 @@
                   <h4>English</h4>
                   <div class="progress-bar">
                     <div class="progress""
-                    style="height: 24px; width:90%; background-color:#cd4325;">
+                    style="height: 24px; width:80%; background-color:#cd4325;">
                     </div>
                   </div>
                 </div>
@@ -290,17 +402,6 @@
                   <div class="progress-bar">
                     <div class="progress""
                     style="height: 24px; width:40%; background-color:#cd4325;">
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-6">
-                <div class="skillrate-item">
-                  <h4>Love &hearts;</h4>
-                  <div class="progress-bar">
-                    <div class="progress""
-                    style="height: 24px; width:100%; background-color:#cd4325;">
                     </div>
                   </div>
                 </div>
@@ -320,16 +421,17 @@
       <section class="section my-work" data-section="section3">
         <div class="container">
           <div class="section-heading">
-            <h2>My Projects</h2>
+            <h2>Projects</h2>
             <div class="line-dec"></div>
             <span
-              >Throughout my few years in programming I exposed myself to tons of knowledge useful 
-              in creating quality game projects through programming tools & systems throughout many 
-              fields of the Game-Development world.</span
+              >During the past years of programming I learned a ton of useful and interesting skills that I in turn
+              tried to turn into quality game projects all belonging to some part of the Game-Development world.</span
             >
           </div>
+
           <div class="row">
             <div class="isotope-wrapper">
+              
               <form class="isotope-toolbar">
                 <label
                   ><input
@@ -377,40 +479,40 @@
                 </label>
                 
               </form>
+
+              
               <div class="isotope-box">
-                <div class="isotope-item" data-type="Engine Programming">
-                  <figure class="snip1321">
-                    <img
-                      src="assets/images/VSLogo.jpg"
-                      alt="sq-sample26"
-                    />
-                    <figcaption>
-                      <a
-                        href="assets/images/VSLogo.jpg"
-                        data-lightbox="image-1"
-                        data-title="Caption"
-                        ><i class="fa fa-search"></i
-                      ></a>
+
+                
+                  <div class="isotope-item" data-type="Engine Programming" >
+                    <figure class="snip1321" >
+                     <img
+                       src="assets/images/Projects/LiberoEngine3D.png"
+                       alt="sq-sample26"
+                      />
+                     <figcaption>
+                         <span class="fa fa-search" onclick="togglePopup(document.getElementById('popup-1'))"></span>
+
                       <h4>The Libero Engine [3D]</h4>
-                      <span>A small solo-developed Game Engine written in C++ <br>
+                      <span >A small solo-developed Game Engine written in C++ <br>
                             [Still in development]</span>
                     </figcaption>
                   </figure>
                 </div>
 
+                
+                
+
                 <div class="isotope-item" data-type="Engine Programming">
                   <figure class="snip1321">
                     <img
-                      src="assets/images/VSLogo.jpg"
+                      src="assets/images/Projects/BubbleBobble.png"
                       alt="sq-sample26"
                     />
+                    
                     <figcaption>
-                      <a
-                        href="assets/images/VSLogo.jpg"
-                        data-lightbox="image-1"
-                        data-title="Caption"
-                        ><i class="fa fa-search"></i
-                      ></a>
+                      <span class="fa fa-search" onclick="togglePopup(document.getElementById('popup-2'))"></span>
+
                       <h4>The Libero Engine [2D]<br>
                         - BubbleBobble</h4>
                       <span>Re-distribution not allowed</span>
@@ -421,18 +523,15 @@
                 <div class="isotope-item" data-type="Graphics Programming">
                   <figure class="snip1321">
                     <img
-                      src="assets/images/VSLogo.jpg"
+                      src="assets/images/Projects/StikBoldt.png"
                       alt="sq-sample26"
                     />
                     <figcaption>
-                      <a
-                        href="assets/images/VSLogo.jpg"
-                        data-lightbox="image-1"
-                        data-title="Caption"
-                        ><i class="fa fa-search"></i
-                      ></a>
+                      <span class="fa fa-search" onclick="togglePopup(document.getElementById('popup-3'))"></span>
+
+                      </i></a>
                       <h4>'Stikbold' Remake for PC (DX11)</h4>
-                      <span>Recreating an awesome indie game released for Nintendo Switch, 
+                      <span>Recreating an awesome indie game released for Nintendo Switch, <br>
                         making use of the DirectX11 API</span>
                     </figcaption>
                   </figure>
@@ -441,17 +540,26 @@
                 <div class="isotope-item" data-type="Graphics Programming">
                   <figure class="snip1321">
                     <img
-                      src="assets/images/VSLogo.jpg"
+                      src="assets/images/Projects/Rasterizer_3.png"
                       alt="sq-sample26"
                     />
                     <figcaption>
-                      <a
-                        href="assets/images/VSLogo.jpg"
-                        data-lightbox="image-1"
-                        data-title="Caption"
-                        ><i class="fa fa-search"></i
-                      ></a>
-                      <h4>Custom Rasterizer & Raytracer</h4>
+                      <span class="fa fa-search" onclick="togglePopup(document.getElementById('popup-4'))"></span>
+                      <h4>Custom Rasterizer</h4>
+                      <span>customize anything</span>
+                    </figcaption>
+                  </figure>
+                </div>
+
+                <div class="isotope-item" data-type="Graphics Programming">
+                  <figure class="snip1321">
+                    <img
+                      src="assets/images/Projects/Raytracer.png"
+                      alt="sq-sample26"
+                    />
+                    <figcaption>
+                      <span class="fa fa-search" onclick="togglePopup(document.getElementById('popup-9'))"></span>
+                      <h4>Custom Raytracer</h4>
                       <span>customize anything</span>
                     </figcaption>
                   </figure>
@@ -461,16 +569,11 @@
                 <div class="isotope-item" data-type="Gameplay & GameDesign">
                   <figure class="snip1321">
                     <img
-                      src="assets/images/VSLogo.jpg"
+                      src="assets/images/Projects/Polybusted.png"
                       alt="sq-sample26"
                     />
                     <figcaption>
-                      <a
-                        href="assets/images/VSLogo.jpg"
-                        data-lightbox="image-1"
-                        data-title="Caption"
-                        ><i class="fa fa-search"></i
-                      ></a>
+                      <span class="fa fa-search" onclick="togglePopup(document.getElementById('popup-5'))"></span>
                       <h4>PolyBusted!</h4>
                       <span>Ut sollicitudin risus</span>
                     </figcaption>
@@ -480,16 +583,11 @@
                 <div class="isotope-item" data-type="Gameplay & GameDesign">
                   <figure class="snip1321">
                     <img
-                      src="assets/images/VSLogo.jpg"
+                      src="assets/images/Projects/TowerDefense.png"
                       alt="sq-sample26"
                     />
                     <figcaption>
-                      <a
-                        href="assets/images/VSLogo.jpg"
-                        data-lightbox="image-1"
-                        data-title="Caption"
-                        ><i class="fa fa-search"></i
-                      ></a>
+                      <span class="fa fa-search" onclick="togglePopup(document.getElementById('popup-6'))"></span>
                       <h4>Mage-Towers</h4>
                       <span>Donec eget massa ante</span>
                     </figcaption>
@@ -499,16 +597,11 @@
                 <div class="isotope-item" data-type="3D Design & Techniques">
                   <figure class="snip1321">
                     <img
-                      src="assets/images/VSLogo.jpg"
+                      src="assets/images/Projects/Robot.png"
                       alt="sq-sample26"
                     />
                     <figcaption>
-                      <a
-                        href="assets/images/VSLogo.jpg"
-                        data-lightbox="image-1"
-                        data-title="Caption"
-                        ><i class="fa fa-search"></i
-                      ></a>
+                      <span class="fa fa-search" onclick="togglePopup(document.getElementById('popup-7'))"></span>
                       <h4>'Mad-Max'-Highpoly Robot</h4>
                       <span>Donec eget massa ante</span>
                     </figcaption>
@@ -518,16 +611,11 @@
                 <div class="isotope-item" data-type="3D Design & Techniques">
                   <figure class="snip1321">
                     <img
-                      src="assets/images/VSLogo.jpg"
+                      src="assets/images/Projects/Lerna.png"
                       alt="sq-sample26"
                     />
                     <figcaption>
-                      <a
-                        href="assets/images/VSLogo.jpg"
-                        data-lightbox="image-1"
-                        data-title="Caption"
-                        ><i class="fa fa-search"></i
-                      ></a>
+                      <span class="fa fa-search" onclick="togglePopup(document.getElementById('popup-8'))"></span>
                       <h4>'Lerna' Level Design</h4>
                       <span> Description...</span>
                     </figcaption>
@@ -541,7 +629,7 @@
       </section>
 
 
-
+      
 
 
       <section class="section about-me" data-section="section1">
@@ -566,11 +654,15 @@
               </div>
               <div class="col-md-6">
                 <div class="right-text">
-                  <h4>Additional Interests &hearts;</h4>
-                  <p>
+                  <h4>Additional Interests</h4>
+                  <p style="font-weight: bold;">
+                    - Music And Music Theory<br>
                     - Cooking <br>
-                    - Music & Every Instrument ever!<br>
-                    - Dance Dance Revolution & Just Dance!<br>
+                  </p>
+
+                  <p style="font-weight: bold;">
+                    On the off-time, I spend my time <br>
+                    teaching Classical Guitar, and as a scouting group leader.
                   </p>
                 </div>
               </div>
@@ -590,7 +682,7 @@
             <h2>Let's get in touch!</h2>
             <div class="line-dec"></div>
             <span
-              >I'm always interested in </span
+              >I am currently looking for an internship and would love to hear from you! <br> </span
             >
           </div>
           <div class="row">
@@ -659,31 +751,25 @@
             </div>
           </div>
 
-          <form action="mailto:arnevankerschaver@gmail.com" method="post" enctype="text/plain">
-            Name:<br>
-            <input type="text" name="name"><br>
-            E-mail:<br>
-            <input type="text" name="mail"><br>
-            Comment:<br>
-            <input type="text" name="comment" size="50"><br><br>
-            <input type="submit" value="Send">
-            <input type="reset" value="Reset">
-            </form>
-
         </div>
       </section>
     </div>
+
+    <script src="assets/js/simplepopup.js"></script>
 
     <!-- Scripts -->
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
+    
     <script src="assets/js/typingText.js"></script>
     <script src="assets/js/isotope.min.js"></script>
     <script src="assets/js/owl-carousel.js"></script>
-    <script src="assets/js/lightbox.js"></script>
     <script src="assets/js/custom.js"></script>
+    <!--
+    <script src="assets/js/lightbox.js"></script>-->
+    
     
     <script>
       //according to loftblog tut
@@ -735,5 +821,6 @@
         checkSection();
       });
     </script>
+
   </body>
 </html>
