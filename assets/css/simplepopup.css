@@ -30,11 +30,11 @@
 
 .popup .content .content-text
 {
-    font-size: larger;
+    font-size: 20px;
     border-radius: 10px;
     transform: translate(+95%, -12%);
     max-width: 450px;
-    min-height: 800px;
+    /*min-height: 800px;*/
     min-width: 600px;
     background-color: rgba(0, 0, 0, 0.9);
     top: 50% + 100px;
@@ -61,6 +61,29 @@ box-shadow: 0px 0px 34px 1px rgba(0,0,0,0.94);
     background-color: rgba(0, 0, 0, 0.7);
     z-index: 602;
     transform: translate(-50%, -50%) scale(0);
+}
+
+
+.popup .content-text .links
+{
+    margin-top: 30px;
+}
+.popup .content-text .fa
+{
+    font-size: 3em;
+    color: white;
+}
+
+.popup .content-text .iconify
+{
+    font-size: 3em;
+    color: white;
+}
+
+.popup .content-text .fab
+{
+    font-size: 3em;
+    color: white;
 }
 
 

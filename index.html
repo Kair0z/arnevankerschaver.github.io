@@ -15,6 +15,8 @@
       rel="stylesheet"
     />
 
+    
+
     <title>Arne Van Kerschaver</title>
 
     <!-- Bootstrap core CSS -->
@@ -23,10 +25,12 @@
     <!-- Additional CSS Files -->
     <link rel="stylesheet" href="assets/css/fontawesome.css" />
     <link rel="stylesheet" href="assets/css/style2.css" />
+    <link rel="stylesheet" href="assets/css/simplepopup.css"/>
     <link rel="stylesheet" href="assets/css/templatemo-style.css" />
     <link rel="stylesheet" href="assets/css/owl.css" />
     <link rel="stylesheet" href="assets/css/lightbox.css" />
-    <link rel="stylesheet" href="assets/css/simplepopup.css"/>
+
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
   </head>
 
   <body>
@@ -48,9 +52,13 @@
           <br>
           The Engine uses: <br>
           - DirectX11 for rendering <br>
-          - PhysX for Physics <br>
           - ImGui for Editor & User-Interface.<br>
 
+          <div class="links">
+          <a href="https://github.com/Kair0z/LiberoEngine3D">
+            <i class="fa fa-github"></i></a>
+            <p>Git</p>
+          </div>
         </p>
       </div>
        </div>
@@ -68,10 +76,16 @@
           and only supports 2D rendering.<br><br>
   
           In this engine, I remade a beloved arcade-classic 'BubbleBobble' to test out the functionality of the engine.
-          The engine is built using a lot of Game-programming Design patterns which I learned a lot about in this book: [Booklink].
+          The engine is built using a lot of <a href="https://gameprogrammingpatterns.com">Game-programming Design patterns </a> such as 'ServiceLocators',  
           Without a doubt the engine has a lot to improve upon. 
           But while working this project I learned valuable skills & techniques 
           that made me understand and appreciate how a Game-Engine works and is built even more.</p>
+
+          <div class="links">
+          <a href="https://github.com/Kair0z/LiberoEngine2D">
+            <i class="fa fa-github"></i></a>
+            <p>Git</p>
+          </div>
       </div>
        </div>
       
@@ -95,7 +109,13 @@
           <br>
           All of which would call onto the Graphics API of DirectX
           via Visual Studio C++ code, to render them on screen;
+
         </p>
+
+        <a href="https://github.com/Kair0z/StikBoldt-PC">
+          <i class="fa fa-github"></i></a>
+          <p>Git</p>
+
       </div>
       </div>
       
@@ -122,7 +142,12 @@
           <br>
           After I was somewhat satisfied with the work I did,
           I also added some camera-functionality, some background-rendering & interactive-UI-rendering.
+
         </p>
+        <a href="https://github.com/Kair0z/Custom-Rasterizer">
+          <i class="fa fa-github"></i></a>
+          <p>Git</p>
+
       </div>
        </div>
       
@@ -135,8 +160,22 @@
         <div class="content-text">
         <h1>My Custom Raytracer</h1>
         <p>
+          This is a small demo-project for rendering basic mathematical 3D-shapes (such as spheres, cubes, triangles), 
+          and also delivers on rendering a triangle-mesh, parsed from a .obj file.
+          Making the CPU render every pixel in succesion, made the basic concept of how raytracing works more clear.
+          <br><br>
+          It served a good lesson on not alone programming, but also basic-math about how light shades 'pixels' in the real world (PBR materials),
+          and just as important, how the pixels that would not be touched by the lights would have to be shaded.
+          <br><br>
+          Finally, after getting a somewhat pleasant result, I tried my hand at some optimization-features on rendering meshes, such as boundingspheres
+          that enabled the 'pre-culling' a healthy amount of rays that were 'obviously' not going to hit the mesh.
 
         </p>
+
+        <a href="https://github.com/Kair0z/Custom-Raytracer">
+          <i class="fa fa-github"></i></a>
+          <p>Git</p>
+
       </div>
        </div>
     </div>
@@ -148,8 +187,32 @@
         <div class="content-text">
         <h1>PolyBusted!</h1>
         <p>
-          
+          This was my first experience of working in a semi-professional work-ethic, where I, together 
+          with 2 talented artists had to create a game concept, prototype it, and later on, once the development phase
+          came to pass, we had to create our 6-week stretching sprint planning to make every hour of our 'work-day' count. <br> <br>
+
+          The game is a 4-player robot-wars inspired arena game in which try to collect scrappy parts that spawn in the arena,
+          and use them a couple of times before they innevitably fall off again. This then makes for opportunity for other players to
+          try and steal it, in order to get the upper hand.<br><br>
+
+          Due to circumstances I ended up being the only programmer of our team pretty early on in development. 
+          This meant we had to shrink our production-scale down a bit in order to be able to actually deliver a finished product. <br> <br>
+
+          [The game supports only controllers, and was built for Windows with the game requiring of 2 - 4 players joining]
         </p>
+
+        <div class="links">
+          <a href="https://kairoz.itch.io/polybusted">
+            <span class="iconify" data-icon="fa-brands:itch-io" data-inline="false" style="color: white;"></span>
+            </a> 
+            <p> Itch.io </p>
+  
+            <a href="https://www.youtube.com/watch?v=deOy3Q18J48&feature=emb_title">
+              <i class="fa fa-youtube" style="color: white"></i>
+              </a> 
+            <p>Trailer</p>
+        </div>
+        
       </div>
        </div>
     </div>
@@ -159,8 +222,21 @@
       <div class="content" style="background-image: url('assets/images/Projects/TowerDefense.png');">
         <div class="close-btn" onclick="togglePopup(document.getElementById('popup-6'))">&times;</div>
         <div class="content-text">
-        <h1>6</h1>
-        <p>TEXT</p>
+        <h1>Tower Defense!</h1>
+        <p>
+          This small tower-defense game was one of my first projects made in the Unreal Engine 4. 
+          After first getting familiar with the visual scripting language Blueprints, 
+          I later on shifted towards trying out the C++ scripting featured in the engine. <br><br>
+
+          It also proved to be a relatively small test of my AI-programming skills, as enemies were 
+          required to attack towers, but once dealt enough damage, had to chase  the player untill that was
+          no longer worth their time. As they were very busy of course trying to get to the core castle of the player, rather than the player him/herself.
+
+        </p>
+        <a href="https://github.com/Kair0z">
+          <span class="iconify" data-icon="fa-brands:itch-io" data-inline="false"></span>
+          </a> 
+          <p>Itch.io</p>
         </div>
        </div>
       
@@ -171,12 +247,17 @@
       <div class="content" style="background-image: url('assets/images/Projects/Robot.png');">
         <div class="close-btn" onclick="togglePopup(document.getElementById('popup-7'))">&times;</div>
         <div class="content-text">
-        <h1>7</h1>
+        <h1>'Mad Max' Lowpoly Robot</h1>
         <p>
-          A lowpoly robot on which I learned the complete AAA-Game-Asset production pipeline.
-          From unwrapping, to rigging, to baking and adding PBR-materials. This Mad-Max themed mech
-          taught me the power of baking normal maps, making the use of high-poly-looking quality assets possible in games.
+          A lowpoly robot on which I learned the complete AAA-Game-Asset production pipeline.<br>
+          From unwrapping, to rigging, to baking and adding PBR-materials.<br>
+          This Mad-Max themed mech taught me the power of baking normal maps, making the use of high-poly-looking quality assets possible in games.
         </p>
+        <a href="https://sketchfab.com/3d-models/mad-max-mech-dae-robot--fb5bbf3567a149deacc41698e6919f40">
+          <i class="fa fa-cube" aria-hidden="true"></i>
+        </a>
+        <p>Sketchfab</p>
+        
         </div>
        </div>
       
@@ -187,12 +268,18 @@
       <div class="content" style="background-image: url('assets/images/Projects/Lerna.png');">
         <div class="close-btn" onclick="togglePopup(document.getElementById('popup-8'))">&times;</div>
         <div class="content-text">
-        <h1>8</h1>
+        <h1>Lerna Level-Design</h1>
         <p>
             From designing and blocking out a level, to creating modular assets for optimizing re-usability,<br>
             this project did put my 3D-modelling and unwrapping capabilities to the test, as well as increasing my knowledge on<br>
             PBR-materials and how they were used in AAA-quality-games.<br>
         </p>
+          
+          <a href="https://www.youtube.com/watch?v=3Cql7l0h77c">
+            <i class="fa fa-youtube"></i>
+            </a> 
+          
+          <p>Trailer</p>
         </div>
        </div>
       
@@ -235,11 +322,10 @@
                   <i class="fa fa-linkedin"></i></a>
                 </li>
                 <li>
-                  <a href="#"><i class="fa fa-dribbble"></i></a>
+                  <a href="https://github.com/Kair0z">
+                    <i class="fa fa-github"></i></a>
                 </li>
-                <li>
-                  <a href="#"><i class="fa fa-rss"></i></a>
-                </li>
+
               </ul>
             </div>
           </div>
@@ -292,9 +378,13 @@
             <div class="col-md-6">
               <div class="service-item">
                 <div class="fourth-service-icon service-icon"></div>
-                <h4></h4>
+                <h4>Team Projects, Team player.</h4>
                 <p>
-                  
+                  I've had the luck to meet a lot of amazing people during 
+                  the group projects I joined. During these projects I learned not only to code and program.
+                  But I also got around to communicating opinions clearly and in an assertive way towards a team, in a professional manner.
+                  On top of that it taught me how to split up my work and plan the workload according to my week. As well as how to manage 
+                  file-version-control with the help of programs like Github and Perforce.
                 </p>
               </div>
             </div>
@@ -306,6 +396,7 @@
                 <p>
                   After making a couple of games in various engines [UE4 - Unity].
                   And a lot of unfinished projects that taught me what's fun and what's not,
+                  designing 
                   I possess the knowledge to produce well-structured, re-usable & clean code in order 
                   to create the craziest of projects.
                 </p>
@@ -760,71 +851,10 @@
               >I am currently looking for an internship and would love to hear from you!
                <br> </span
             >
-          </div>
-          <div class="row">
-            <div class="right-content">
-              <div class="container">
-                <form id="contact" action="" method="post">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <fieldset>
-                        <input
-                          name="name"
-                          type="text"
-                          class="form-control"
-                          id="name"
-                          placeholder="Your name..."
-                          required=""
-                        />
-                      </fieldset>
-                    </div>
-                    <div class="col-md-6">
-                      <fieldset>
-                        <input
-                          name="email"
-                          type="text"
-                          class="form-control"
-                          id="email"
-                          placeholder="Your email..."
-                          required=""
-                        />
-                      </fieldset>
-                    </div>
-                    <div class="col-md-12">
-                      <fieldset>
-                        <input
-                          name="subject"
-                          type="text"
-                          class="form-control"
-                          id="subject"
-                          placeholder="Subject..."
-                          required=""
-                        />
-                      </fieldset>
-                    </div>
-                    <div class="col-md-12">
-                      <fieldset>
-                        <textarea
-                          name="message"
-                          rows="6"
-                          class="form-control"
-                          id="message"
-                          placeholder="Your message..."
-                          required=""
-                        ></textarea>
-                      </fieldset>
-                    </div>
-                    <div class="col-md-12">
-                      <fieldset>
-                        <button type="submit" id="form-submit" class="button">
-                          Send Message
-                        </button>
-                      </fieldset>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
+            <span style="font-weight: bold; font-size: large; margin-top: 50px;" >
+              My mail: avk.buss@gmail.com <br> 
+
+            </span>
           </div>
 
         </div>
