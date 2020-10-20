@@ -299,13 +299,16 @@
             </div>
             <div class="author-content">
               <h4>I'm Arne.</h4>
-              <span>std::cout << </span>
-              <span class="typing-text"></span> <span class="cursor">&nbsp;</span>
+              <span>std::cout << " </span>
+              <span class="typing-text"></span>
+              <span>";</span>
+               <span class="cursor">&nbsp;</span>
+              
             </div>
             <nav class="main-nav" role="navigation">
               <ul class="main-menu">
-                <li><a href="#section2">Skills</a></li>
                 <li><a href="#section3">My Projects</a></li>
+                <li><a href="#section2">Skills</a></li>
                 <li><a href="#section1">About me</a></li>
                 <li><a href="#section4">Contact Me</a></li>
               </ul>
@@ -332,11 +335,236 @@
         </div>
       </div>
 
+      <section class="section my-work" data-section="section3">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Projects</h2>
+            <div class="line-dec"></div>
+            <span
+              >During the past years of programming I learned a ton of useful and interesting skills that I in turn
+              tried to turn into quality game projects all belonging to some part of the Game-Development world.</span
+            >
+          </div>
+
+          <div class="row">
+            <div class="isotope-wrapper">
+              
+              <form class="isotope-toolbar">
+                <label
+                  ><input
+                    type="radio"
+                    data-type="*"
+                    checked=""
+                    name="isotope-filter"
+                  />
+                  <span>All</span></label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    data-type="Engine Programming"
+                    name="isotope-filter"
+                  />
+                  <span>Engine Programming</span></label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    data-type="Graphics Programming"
+                    name="isotope-filter"
+                  />
+                  <span>Graphics Programming</span></label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    data-type="Gameplay & GameDesign"
+                    name="isotope-filter"
+                  />
+                  <span>Gameplay & GameDesign</span></label
+                >
+
+                <label>
+                  <input
+                  type="radio"
+                  data-type="3D Design & Techniques"
+                  
+                  name="isotope-filter"
+                  />
+                  <span>3D Design & Techniques</span></label
+                >
+
+                </label>
+                
+              </form>
+
+              
+              <div class="isotope-box">
+
+                
+                  <div class="isotope-item" id="isotope-element-fav" data-type="Engine Programming" >
+                    <figure class="snip1321" onclick="togglePopup(document.getElementById('popup-1'))">
+                     <img
+                       src="assets/images/Projects/LiberoEngine3D.png"
+                       alt="sq-sample26"
+                      />
+                     <figcaption>
+                         <span class="fa fa-search"></span>
+
+                      <h4>The Libero Engine [3D]</h4>
+                      <span >A small solo-developed Game Engine written in C++ <br>
+                            [Still in development]</span>
+                    </figcaption>
+                  </figure>
+                </div>
+
+                
+                
+
+                <div class="isotope-item" data-type="Engine Programming">
+                  <figure class="snip1321" onclick="togglePopup(document.getElementById('popup-2'))">
+                    <img
+                      src="assets/images/Projects/BubbleBobble.png"
+                      alt="sq-sample26"
+                    />
+                    
+                    <figcaption>
+                      <span class="fa fa-search"></span>
+
+                      <h4>The Libero Engine [2D]<br>
+                        - BubbleBobble</h4>
+                      <span>A small 2D-arcade-game ('BubbleBobble') made in C++ Visual Studio 2020.</span>
+                    </figcaption>
+                  </figure>
+                </div>
+
+                <div class="isotope-item" data-type="Graphics Programming">
+                  <figure class="snip1321" onclick="togglePopup(document.getElementById('popup-3'))">
+                    <img
+                      src="assets/images/Projects/StikBoldt.png"
+                      alt="sq-sample26"
+                    />
+                    <figcaption>
+                      <span class="fa fa-search"></span>
+
+                      </i></a>
+                      <h4>'Stikbold' Remake for PC (DX11)</h4>
+                      <span>Recreating an awesome indie game released for Nintendo Switch, <br>
+                        making use of the DirectX11 API</span>
+                    </figcaption>
+                  </figure>
+                </div>
+
+                <div class="isotope-item"  id="isotope-element-fav"  data-type="Graphics Programming">
+                  <figure class="snip1321" onclick="togglePopup(document.getElementById('popup-4'))">
+                    <img
+                      src="assets/images/Projects/Rasterizer_3.png"
+                      alt="sq-sample26"
+                    />
+                    <figcaption>
+                      <span class="fa fa-search"></span>
+                      <h4>Custom Rasterizer</h4>
+                      <span>
+                        My first Graphics-Programming-related demo-application rendering an object
+                        by mimicking the DirectX-render-pipeline. This renderer uses the CPU to render every pixel.
+                      </span>
+                    </figcaption>
+                  </figure>
+                </div>
+
+                <div class="isotope-item" data-type="Graphics Programming">
+                  <figure class="snip1321" onclick="togglePopup(document.getElementById('popup-9'))">
+                    <img
+                      src="assets/images/Projects/Raytracer.png"
+                      alt="sq-sample26"
+                    />
+                    <figcaption>
+                      <span class="fa fa-search"></span>
+                      <h4>Custom Raytracer</h4>
+                      <span>
+                        A software-based raytracer written in C++ that shades every pixel 
+                        using calculations in the PBR-workflow and in optimizing the raytracing process.
+                      </span>
+                    </figcaption>
+                  </figure>
+                </div>
+
+
+                <div class="isotope-item" data-type="Gameplay & GameDesign">
+                  <figure class="snip1321" onclick="togglePopup(document.getElementById('popup-5'))">
+                    <img
+                      src="assets/images/Projects/Polybusted.png"
+                      alt="sq-sample26"
+                    />
+                    <figcaption>
+                      <span class="fa fa-search"></span>
+                      <h4>PolyBusted!</h4>
+                      <span>
+                        A compact, high-impact 3D Unity game developped by a team of 
+                        2 wonderful artists and myself.
+                      </span>
+                    </figcaption>
+                  </figure>
+                </div>
+
+                <div class="isotope-item" data-type="Gameplay & GameDesign">
+                  <figure class="snip1321" onclick="togglePopup(document.getElementById('popup-6'))"> 
+                    <img
+                      src="assets/images/Projects/TowerDefense.png"
+                      alt="sq-sample26"
+                    />
+                    <figcaption>
+                      <span class="fa fa-search"></span>
+                      <h4>Mage-Towers</h4>
+                      <span>
+                        My first game made in Unreal Engine 4, mostly programmed in its visual scripting language 'Blueprints'.
+                      </span>
+                    </figcaption>
+                  </figure>
+                </div>
+
+                <div class="isotope-item" data-type="3D Design & Techniques">
+                  <figure class="snip1321"  onclick="togglePopup(document.getElementById('popup-7'))">
+                    <img
+                      src="assets/images/Projects/Robot.png"
+                      alt="sq-sample26"
+                    />
+                    <figcaption>
+                      <span class="fa fa-search"></span>
+                      <h4>'Mad-Max'-themed Lowpoly Robot</h4>
+                      <span>From a lowpoly robot to a seemingly high-poly 3D model using the 
+                        AAA-Game-asset-production pipeline.</span>
+                    </figcaption>
+                  </figure>
+                </div>
+
+                <div class="isotope-item" data-type="3D Design & Techniques">
+                  <figure class="snip1321" onclick="togglePopup(document.getElementById('popup-8'))">
+                    <img
+                      src="assets/images/Projects/Lerna.png"
+                      alt="sq-sample26"
+                    />
+                    <figcaption>
+                      <span class="fa fa-search"></span>
+                      <h4>'Lerna' Level Design</h4>
+                      <span> 
+                        A 3D, midpoly level design made in Unreal Engine 4.
+                      </span>
+                    </figcaption>
+                  </figure>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
 
       <section class="section my-services" data-section="section2">
         <div class="container">
           <div class="section-heading">
-            <h2>My Services?</h2>
+            <h2>Main Interests</h2>
             <div class="line-dec"></div>
             <span
               >In a couple of years I learned about a wide variety of subjects
@@ -347,18 +575,20 @@
 
           <div class="row">
             <div class="col-md-6">
-              <div class="service-item">
-                <div class="first-service-icon service-icon"></div>
-                <h4>Engine Programming (C++)</h4>
-                <p>
-                  While tinkering at my personal 2D-Engine and later on 
-                  upscaling it towards a 3D-Game/Rendering Engine in C++<br> 
-                  I came face to face with a lot of aspects of how a general Game-engine works. <br><br>
-
-                  Nowadays I spend my time working on my 3D-engine and implementing features that I can find in common 
-                  3th-party engines like Godot, Unreal Engine 4 and The Unity Engine.
-                </p>
-              </div>
+              <a href="#section3">
+                <div class="service-item">
+                  <div class="first-service-icon service-icon"></div>
+                  <h4>Engine Programming (C++)</h4>
+                  <p>
+                    While tinkering at my personal 2D-Engine and later on 
+                    upscaling it towards a 3D-Game/Rendering Engine in C++<br> 
+                    I came face to face with a lot of aspects of how a general Game-engine works. <br><br>
+  
+                    Nowadays I spend my time working on my 3D-engine and implementing features that I can find in common 
+                    3th-party engines like Godot, Unreal Engine 4 and The Unity Engine.
+                  </p>
+                </div>
+              </a>
             </div>
             <div class="col-md-6">
               <div class="service-item">
@@ -378,10 +608,10 @@
             <div class="col-md-6">
               <div class="service-item">
                 <div class="fourth-service-icon service-icon"></div>
-                <h4>Team Projects, Team player.</h4>
+                <h4>Team Projects</h4>
                 <p>
                   I've had the luck to meet a lot of amazing people during 
-                  the group projects I joined. During these projects I learned not only to code and program.
+                  the team projects I was part of. During these projects I learned not only to code and program.
                   But I also got around to communicating opinions clearly and in an assertive way towards a team, in a professional manner.
                   On top of that it taught me how to split up my work and plan the workload according to my week. As well as how to manage 
                   file-version-control with the help of programs like Github and Perforce.
@@ -392,7 +622,7 @@
             <div class="col-md-6">
               <div class="service-item">
                 <div class="third-service-icon service-icon"></div>
-                <h4>Thinking -> 'Games'</h4>
+                <h4>Game Design</h4>
                 <p>
                   After making a couple of games in various engines [UE4 - Unity].
                   And a lot of unfinished projects that taught me what's fun and what's not,
@@ -562,229 +792,7 @@
 
 
 
-      <section class="section my-work" data-section="section3">
-        <div class="container">
-          <div class="section-heading">
-            <h2>Projects</h2>
-            <div class="line-dec"></div>
-            <span
-              >During the past years of programming I learned a ton of useful and interesting skills that I in turn
-              tried to turn into quality game projects all belonging to some part of the Game-Development world.</span
-            >
-          </div>
-
-          <div class="row">
-            <div class="isotope-wrapper">
-              
-              <form class="isotope-toolbar">
-                <label
-                  ><input
-                    type="radio"
-                    data-type="*"
-                    checked=""
-                    name="isotope-filter"
-                  />
-                  <span>all</span></label
-                >
-                <label
-                  ><input
-                    type="radio"
-                    data-type="Engine Programming"
-                    name="isotope-filter"
-                  />
-                  <span>Engine Programming</span></label
-                >
-                <label
-                  ><input
-                    type="radio"
-                    data-type="Graphics Programming"
-                    name="isotope-filter"
-                  />
-                  <span>Graphics Programming</span></label
-                >
-                <label
-                  ><input
-                    type="radio"
-                    data-type="Gameplay & GameDesign"
-                    name="isotope-filter"
-                  />
-                  <span>Gameplay & GameDesign</span></label
-                >
-
-                <label>
-                  <input
-                  type="radio"
-                  data-type="3D Design & Techniques"
-                  name="isotope-filter"
-                  />
-                  <span>3D Design & Techniques</span></label
-                >
-
-                </label>
-                
-              </form>
-
-              
-              <div class="isotope-box">
-
-                
-                  <div class="isotope-item" data-type="Engine Programming" >
-                    <figure class="snip1321" >
-                     <img
-                       src="assets/images/Projects/LiberoEngine3D.png"
-                       alt="sq-sample26"
-                      />
-                     <figcaption>
-                         <span class="fa fa-search" onclick="togglePopup(document.getElementById('popup-1'))"></span>
-
-                      <h4>The Libero Engine [3D]</h4>
-                      <span >A small solo-developed Game Engine written in C++ <br>
-                            [Still in development]</span>
-                    </figcaption>
-                  </figure>
-                </div>
-
-                
-                
-
-                <div class="isotope-item" data-type="Engine Programming">
-                  <figure class="snip1321">
-                    <img
-                      src="assets/images/Projects/BubbleBobble.png"
-                      alt="sq-sample26"
-                    />
-                    
-                    <figcaption>
-                      <span class="fa fa-search" onclick="togglePopup(document.getElementById('popup-2'))"></span>
-
-                      <h4>The Libero Engine [2D]<br>
-                        - BubbleBobble</h4>
-                      <span>A small 2D-arcade-game ('BubbleBobble') made in C++ Visual Studio 2020.</span>
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="isotope-item" data-type="Graphics Programming">
-                  <figure class="snip1321">
-                    <img
-                      src="assets/images/Projects/StikBoldt.png"
-                      alt="sq-sample26"
-                    />
-                    <figcaption>
-                      <span class="fa fa-search" onclick="togglePopup(document.getElementById('popup-3'))"></span>
-
-                      </i></a>
-                      <h4>'Stikbold' Remake for PC (DX11)</h4>
-                      <span>Recreating an awesome indie game released for Nintendo Switch, <br>
-                        making use of the DirectX11 API</span>
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="isotope-item" data-type="Graphics Programming">
-                  <figure class="snip1321">
-                    <img
-                      src="assets/images/Projects/Rasterizer_3.png"
-                      alt="sq-sample26"
-                    />
-                    <figcaption>
-                      <span class="fa fa-search" onclick="togglePopup(document.getElementById('popup-4'))"></span>
-                      <h4>Custom Rasterizer</h4>
-                      <span>
-                        My first Graphics-Programming-related demo-application rendering an object
-                        by mimicking the DirectX-render-pipeline. This renderer uses the CPU to render every pixel.
-                      </span>
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="isotope-item" data-type="Graphics Programming">
-                  <figure class="snip1321">
-                    <img
-                      src="assets/images/Projects/Raytracer.png"
-                      alt="sq-sample26"
-                    />
-                    <figcaption>
-                      <span class="fa fa-search" onclick="togglePopup(document.getElementById('popup-9'))"></span>
-                      <h4>Custom Raytracer</h4>
-                      <span>
-                        A software-based raytracer written in C++ that shades every pixel 
-                        using calculations in the PBR-workflow and in optimizing the raytracing process.
-                      </span>
-                    </figcaption>
-                  </figure>
-                </div>
-
-
-                <div class="isotope-item" data-type="Gameplay & GameDesign">
-                  <figure class="snip1321">
-                    <img
-                      src="assets/images/Projects/Polybusted.png"
-                      alt="sq-sample26"
-                    />
-                    <figcaption>
-                      <span class="fa fa-search" onclick="togglePopup(document.getElementById('popup-5'))"></span>
-                      <h4>PolyBusted!</h4>
-                      <span>
-                        A compact, high-impact 3D Unity game developped by a team of 
-                        2 wonderful artists and myself.
-                      </span>
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="isotope-item" data-type="Gameplay & GameDesign">
-                  <figure class="snip1321">
-                    <img
-                      src="assets/images/Projects/TowerDefense.png"
-                      alt="sq-sample26"
-                    />
-                    <figcaption>
-                      <span class="fa fa-search" onclick="togglePopup(document.getElementById('popup-6'))"></span>
-                      <h4>Mage-Towers</h4>
-                      <span>
-                        My first game made in Unreal Engine 4, mostly programmed in its visual scripting language 'Blueprints'.
-                      </span>
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="isotope-item" data-type="3D Design & Techniques">
-                  <figure class="snip1321">
-                    <img
-                      src="assets/images/Projects/Robot.png"
-                      alt="sq-sample26"
-                    />
-                    <figcaption>
-                      <span class="fa fa-search" onclick="togglePopup(document.getElementById('popup-7'))"></span>
-                      <h4>'Mad-Max'-themed Lowpoly Robot</h4>
-                      <span>From a lowpoly robot to a seemingly high-poly 3D model using the 
-                        AAA-Game-asset-production pipeline.</span>
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="isotope-item" data-type="3D Design & Techniques">
-                  <figure class="snip1321">
-                    <img
-                      src="assets/images/Projects/Lerna.png"
-                      alt="sq-sample26"
-                    />
-                    <figcaption>
-                      <span class="fa fa-search" onclick="togglePopup(document.getElementById('popup-8'))"></span>
-                      <h4>'Lerna' Level Design</h4>
-                      <span> 
-                        A 3D, midpoly level design made in Unreal Engine 4.
-                      </span>
-                    </figcaption>
-                  </figure>
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      
 
 
       

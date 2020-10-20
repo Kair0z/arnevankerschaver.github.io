@@ -536,7 +536,19 @@ section.my-work .section-heading {
     margin-bottom: 30px;
 }
 
-.isotope-item img {
+#isotope-element-fav::after{
+    content: "\2605";
+    font-size: 40px;
+    position: inherit;
+    top: 5%;
+    left: 5%;
+    color: #EF8833;
+
+
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 1);
+}
+
+.isotope-item img{
     top: 0;
     left: 0;
     width: 100%;
@@ -558,6 +570,7 @@ figure.snip1321 {
   text-align: center;
   -webkit-perspective: 50em;
   perspective: 50em;
+  z-index: 100;
 }
 figure.snip1321 * {
   -webkit-box-sizing: padding-box;
