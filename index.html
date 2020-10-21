@@ -128,16 +128,21 @@
         <div class="content-text">
         <h1>My Custom Rasterizer</h1>
         <p>
-          This rasterizer became one of the first demo-projects to help me get familiar
-          with the DirectX11 API.<br><br>
+          This software-based-rasterizer became one of the first demo-projects to help me get familiar
+          with the DirectX-rendering-pipeline.<br><br>
 
           However, the project is not a hardware-based renderer calling onto DirectX, but a 
           software-based renderer that makes the CPU shade every pixel after one another.
-          With a system that mirrors the DX-renderpipeline with <br><br>
-          1) an Input Assembler).<br>
-          2) a Vertex Shader) <br>
-          3) a Rasterizer) <br>
-          4) a Pixelshader <br>
+          With a system that tries to mirror the DX-renderpipeline. <br><br>
+
+          The program allows for viewing a mesh in multiple viewtypes: <br>
+          - Materialmode <br>
+          - Depth-buffer visualisation <br>
+          - Surface-Normal visualisation <br>
+          - ... <br>
+
+          On top of that, I applied what I learned about shading during my work on my custom-raytracer,
+          to implement PBR-materials, as well as the basic Phong-specular BRDF added to a simple Lambert-diffuse BRDF.
 
           <br>
           After I was somewhat satisfied with the work I did,
